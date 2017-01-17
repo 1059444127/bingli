@@ -27,34 +27,137 @@
 	<div id="page-inner">
 		<div class="col-md-12">
 			<div class="card">
-				<div class="card-action"><h1>取材</h1></div>
+				<div class="card-action">
+					<h1>取材</h1>
+				</div>
 				<div class="card-action">流程简介</div>
 				<div class="card-content">
-					<p>Consectetur adipisicing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-						veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-						ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-						voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					<p>
+						标本签收进入实验中后，我们需要进行取材。你可以在这里进行<font color="red">”项目变更“、”会诊资料登记“、”打印包埋盒“</font>等操作。
 					</p>
-						
 					<div class="clearBoth">
 						<br />
 					</div>
 				</div>
-				<div class="card-action">操作演示</div>
+			</div>
+			<div class="card">
+				<div class="card-action">流程演示</div>
 				<div class="card-content">
-					<img alt="test1" src="gif/qucai-01.gif">
+					<div class="alert alert-success">
+						<!-- alert-info;alert-warning;alert-danger -->
+						<strong>01.主线流程</strong>
+					</div>
+					<img alt="test1" src="gif/qucai/qucai-01.gif" width="100%">
+					<div class="alert alert-info">
+						<!-- alert-info;alert-warning;alert-danger -->
+						<strong>02.取材变更项目</strong>
+					</div>
+					<img alt="test1" src="gif/qucai/qucai-02.gif" width="100%">
+					<div class="alert alert-warning">
+						<!-- alert-info;alert-warning;alert-danger -->
+						<strong>03.会诊资料登记</strong>
+					</div>
+					<img alt="test1" src="gif/qucai/qucai-03.gif" width="100%">
+					<div class="alert alert-warning">
+						<!-- alert-info;alert-warning;alert-danger -->
+						<strong>04.取材异常标本登记</strong>
+					</div>
+					<img alt="test1" src="gif/qucai/qucai-04.gif" width="100%">
 				</div>
+			</div>
+
+			<div class="card">
 				<div class="card-action">按钮详解</div>
 				<div class="card-content">
-					<a class="waves-effect waves-light btn"><i class="material-icons left">mode_edit</i>编辑</a>
+					<a class="waves-effect waves-light btn"><i
+						class="material-icons left">note_add</i>保存</a> <span>略。</span> <a
+						class="waves-effect waves-light btn"><i
+						class="material-icons left">note_add</i>完成取材</a> <span>完成取材工作，将流程数据推向下一个节点。</span>
+					<a class="waves-effect waves-light btn"><i
+						class="material-icons left">note_add</i>取材医生登录/取消</a> <span>登陆取材医生，未做角色限制。</span>
+					<a class="waves-effect waves-light btn"><i
+						class="material-icons left">note_add</i>添加图片</a> <span>从本地系统添加图片做为大体图。</span>
+					<a class="waves-effect waves-light btn"><i
+						class="material-icons left">note_add</i>采集图片</a> <span>通过摄像头采集图片做为大体图，图像采集界面<font
+						class="red">“鼠标左键”为采图，“鼠标右键”为退出。</font></span> <a
+						class="waves-effect waves-light btn"><i
+						class="material-icons left">note_add</i>转录到肉眼所见</a> <span>将登记的会诊资料按照指定格式转录到“肉眼所见中”。</span>
+					<a class="waves-effect waves-light btn"><i
+						class="material-icons left">note_add</i>录音</a> <span>通过麦克风录制取材医生描述。</span>
+					<a class="waves-effect waves-light btn"><i
+						class="material-icons left">note_add</i>添加/删除蜡块</a> <span>略。</span>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-action">特殊逻辑</div>
+				<div class="card-content"></div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<div class="card teal">
+							<div class="card-content white-text">
+								<span class="card-title">01.变更检测项目</span>
+								<div class="card-action"></div>
+								<p>
+									&raquo;&nbsp;只能在<font color="red">完成取材</font>之前变更检测项目。
+								</p>
+								<p>
+									&raquo;&nbsp;<font color="red">一个实验号下多个检测项目</font>时不允许变更检测项目。
+								</p>
+								<p>&nbsp;</p>
+								<p>&nbsp;</p>
+								<div class="card-action"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="card">
+							<div class="card-content">
+								<span class="card-title">02.取材异常标本登记</span>
+								<div class="card-action"></div>
+								<p>
+									&raquo;&nbsp;标记为取材异常的蜡块完成取材后，这部分蜡块会一直留在待取材，直到勾选<font
+										class="red">“确认处理”</font>后完成取材。
+								</p>
+								<p>&nbsp;</p>
+								<p>&nbsp;</p>
+								<div class="card-action"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="card blue-grey darken-1">
+							<div class="card-content white-text">
+								<span class="card-title">03.蜡块</span>
+								<div class="card-action"></div>
+								<p>
+									&raquo;&nbsp;<font color="pink">对于外院送诊的蜡块及玻片必须新增相应的蜡块，才能进行流程的推动！</font>
+								</p>
+								<p>&raquo;&nbsp;蜡块编号=实验号+流水号</p>
+								<p>&raquo;&nbsp;删除蜡块只能从最后一个逐一往前删，或者全删。</p>
+								<div class="card-action"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="card blue-grey darken-1">
+							<div class="card-content white-text">
+								<span class="card-title">04.其他</span>
+								<div class="card-action"></div>
+								<p>&raquo;&nbsp;取材时第一个条码选中了“标本情况”，后续条码会自动带出当前所选标本情况内容。</p>
+								<p>&raquo;&nbsp;只能采集1张大体图，报告单模板会取第一张图片。</p>
+								<p>&raquo;&nbsp;选择取材描述模板可以直接输入字典代码。</p>
+								<div class="card-action"></div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+
+
 	</div>
-
-
-	</script>
 
 
 	<!-- JS Scripts-->

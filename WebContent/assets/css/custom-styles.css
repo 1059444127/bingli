@@ -10,7 +10,7 @@ http://creativecommons.org/licenses/by/3.0/
 ------------------------------------------------*/
 body {
     font-family: 'Open Sans', sans-serif;
-    background: #2c445a;
+    background: #84af9b;
 }
 
  #wrapper {
@@ -113,9 +113,9 @@ border-color: #075CB3;
   display: inline-block;
   min-width: 10px;
   padding: 4px 7px;
-  font-size: 11px;
-  font-weight: 700;
-  color: #fff;
+  font-size: 20px;
+  font-weight: 700px;
+  color: #ff0080;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -448,7 +448,7 @@ padding-top: 4px;
 	padding:0;
 }
 .sidebar-collapse .nav > li > a {
-	color: rgba(255, 255, 255, 0.47);
+	color: rgba(255, 255, 255, 0.70);
 	background:transparent;
 	text-shadow:none;
 }
@@ -459,7 +459,7 @@ padding-top: 4px;
 .sidebar-collapse > .nav > li {
 	border-bottom: 1px solid rgba(107, 108, 109, 0.19);
 }
-ul.nav.nav-second-level.collapse.in {background: #0f2a3f;}
+ul.nav.nav-second-level.collapse.in {background: #aa7a73;}
 .sidebar-collapse .nav > li > a:hover,
 .sidebar-collapse .nav > li > a:focus {
 	 
@@ -468,7 +468,7 @@ ul.nav.nav-second-level.collapse.in {background: #0f2a3f;}
  
 .navbar-side {
 	border:none;
-	background: #2c445a;
+	background: #cda49e;
 }
 .top-navbar {
 	background: #ffffff;

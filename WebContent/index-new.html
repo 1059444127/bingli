@@ -25,6 +25,10 @@
 
 <!-- jQuery Js -->
 <script src="assets/js/jquery-1.10.2.js"></script>
+
+<!-- mycss -->
+<link rel="stylesheet" href="css/mycss.css">
+
 </head>
 
 <body>
@@ -91,23 +95,16 @@
 				<ul class="nav" id="main-menu">
 
 					<li><a href="#" class="waves-effect waves-dark"><i
-							class="fa fa-sitemap"></i> 检测过程<span
-							class="fa arrow"></span></a>
-						<ul class="nav nav-second-level">
-							<li><a onclick=fun("qucai") href="#">取材</a></li>
-							<li><a onclick=fun("tuoshui") href="#">脱水</a></li>
-							<li><a onclick=fun("baomai") href="#">包埋</a></li>
-							<li><a onclick=fun("zhipian") href="#">制片</a></li>
-							<li><a onclick=fun("zhipian-wu") href="#">制片-无蜡块</a></li>
-							<li><a onclick=fun("ranse") href="#">染色</a></li>
-							<li><a onclick=fun("hedui") href="#">核对玻片</a></li>
-							<li><a onclick=fun("fenpei") href="#">分配阅片任务<span class="fa arrow"></span></a>
-								<ul class="nav nav-third-level">
-									<li><a href="#">Third Level Link</a></li>
-									<li><a href="#">Third Level Link</a></li>
-									<li><a href="#">Third Level Link</a></li>
-
-								</ul></li>
+							class="fa fa-sitemap"></i> 检测过程<span class="fa arrow"></span></a>
+						<ul id="liebiao" class="nav nav-second-level">
+							<li id="qucai"><a>取材</a></li>
+							<li id="tuoshui"><a>脱水</a></li>
+							<li id="baomai"><a>包埋</a></li>
+							<li id="zhipian"><a>制片</a></li>
+							<li id="zhipian-wu"><a>制片-无蜡块</a></li>
+							<li id="ranse"><a>染色</a></li>
+							<li id="hedui"><a>核对玻片</a></li>
+							<li id="fenpei"><a>分配阅片任务</a></li>
 						</ul></li>
 				</ul>
 
@@ -132,6 +129,21 @@
 	</div>
 
 	<script type="text/javascript">
+		$(function(){
+			$('#liebiao li').hover(function() {
+			    $(this).addClass('hover');
+			}, function() {
+			    $(this).removeClass('hover');
+			});
+			$('#liebiao li').click(function() {
+				$('#liebiao li').removeClass('bg');
+				$(this).addClass('bg');
+				$("#iframe").attr({
+					src : this.id + ".html"
+				});
+			});
+		});
+	
 		function fun2() {
 			var ifm = document.getElementById("iframe");
 			ifm.height = document.documentElement.clientHeight;
@@ -139,11 +151,6 @@
 		window.onresize = function() {
 			fun2();
 		}
-		function fun(data){
-			$("#iframe").attr({
-				src : data + ".html"
-			});
-		};
 	</script>
 	<!-- JS Scripts-->
 
