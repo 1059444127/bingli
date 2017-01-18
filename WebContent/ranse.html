@@ -27,23 +27,81 @@
 	<div id="page-inner">
 		<div class="col-md-12">
 			<div class="card">
-				<div class="card-action">取材</div>
+				<div class="card-action">
+					<h1>染色</h1>
+				</div>
+				<div class="card-action">流程简介</div>
 				<div class="card-content">
-					<p>Consectetur adipisicing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-						veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-						ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-						voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<p>
+						制片完成后，需要记录染色试剂使用情况、试剂更换情况以及染色质控等操作。
+					</p>
 					<div class="clearBoth">
 						<br />
 					</div>
 				</div>
 			</div>
+			<div class="card">
+				<div class="card-action">流程演示</div>
+				<div class="card-content">
+					<div class="alert alert-success">
+						<!-- alert-info;alert-warning;alert-danger -->
+						<strong>01.主线流程</strong>
+					</div>
+					<img alt="test1" src="gif/ranse/ranse-01.gif" width="100%">
+					<div class="alert alert-info">
+						<!-- alert-info;alert-warning;alert-danger -->
+						<strong>02.试剂更换</strong>
+					</div>
+					<img alt="test1" src="gif/ranse/ranse-02.gif" width="100%">
+					<div class="alert alert-warning">
+						<!-- alert-info;alert-warning;alert-danger -->
+						<strong>03.染色质控登记</strong>
+					</div>
+					<img alt="test1" src="gif/ranse/ranse-03.gif" width="100%">
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-action">按钮详解</div>
+				<div class="card-content">
+					<a class="waves-effect waves-light btn"><i
+						class="material-icons left">note_add</i>保存</a> <span>略。</span> <a
+						class="waves-effect waves-light btn"><i
+						class="material-icons left">note_add</i>完成染色</a> <span>完成染色工作，将流程数据推向下一个节点。</span>
+					<a class="waves-effect waves-light btn"><i
+						class="material-icons left">note_add</i>查看染色记录</a> <span>根据条件查询相应的染色记录。</span>
+					<a class="waves-effect waves-light btn"><i
+						class="material-icons left">note_add</i>查看试剂更换记录</a> <span>根据条件查询相应的试剂更换记录。</span>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-action">特殊逻辑</div>
+				<div class="card-content"></div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<div class="card teal">
+							<div class="card-content white-text">
+								<span class="card-title">01.染色界面/方案</span>
+								<div class="card-action"></div>
+								<p>
+									&raquo;&nbsp;5个染色界面完全一致，<font color="red">但能查询到的数据不一致，</font>根据项目设置的“检测方法”选择不同的染色界面。
+								</p>
+								<p>
+									&raquo;&nbsp;<font color="red">必须选择对应的染色方案。</font>
+								</p>
+								<p>
+									&raquo;&nbsp;染色方案的试剂必须全部正常更换债能使用。
+								</p>
+								<div class="card-action"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-
-
-	</script>
 
 
 	<!-- JS Scripts-->
@@ -52,16 +110,6 @@
 
 	<!-- Bootstrap Js -->
 	<script src="assets/js/bootstrap.min.js"></script>
-
-
-	<span id="s1">123</span>
-	<script type="text/javascript">
-		$(function() {
-			$("#s1").click(function() {
-				alert("123");
-			});
-		});
-	</script>
 
 </body>
 

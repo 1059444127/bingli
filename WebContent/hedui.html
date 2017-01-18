@@ -27,23 +27,83 @@
 	<div id="page-inner">
 		<div class="col-md-12">
 			<div class="card">
-				<div class="card-action">取材</div>
+				<div class="card-action">
+					<h1>核对</h1>
+				</div>
+				<div class="card-action">流程简介</div>
 				<div class="card-content">
-					<p>Consectetur adipisicing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-						veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-						ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-						voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<p>
+						在分配给病理医生之前，需要核对玻片与蜡块、蜡块与大体描述及申请单之间的匹配关系。
+					</p>
 					<div class="clearBoth">
 						<br />
 					</div>
 				</div>
 			</div>
+			<div class="card">
+				<div class="card-action">流程演示</div>
+				<div class="card-content">
+					<div class="alert alert-success">
+						<!-- alert-info;alert-warning;alert-danger -->
+						<strong>01.主线流程</strong>
+					</div>
+					<img alt="test1" src="gif/hedui/hedui-01.gif" width="100%">
+					<div class="alert alert-info">
+						<!-- alert-info;alert-warning;alert-danger -->
+						<strong>02.暂时搁置</strong>
+					</div>
+					<img alt="test1" src="gif/hedui/hedui-02.gif" width="100%">
+					<div class="alert alert-warning">
+						<!-- alert-info;alert-warning;alert-danger -->
+						<strong>03.批量核对</strong>
+					</div>
+					<img alt="test1" src="gif/hedui/hedui-03.gif" width="100%">
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-action">按钮详解</div>
+				<div class="card-content">
+					<a
+						class="waves-effect waves-light btn"><i
+						class="material-icons left">note_add</i>完成核对</a> <span>完成核对工作，将流程数据推向下一个节点。</span>
+					<a class="waves-effect waves-light btn"><i
+						class="material-icons left">note_add</i>暂时搁置</a> <span>记录当前病理号在核对过程中存在的问题，可在“病理任务列表”界面的“玻片制片问题汇总表”中查看。</span>
+					<a class="waves-effect waves-light btn"><i
+						class="material-icons left">note_add</i>查看申请单影像</a> <span>略。</span>
+					<a class="waves-effect waves-light btn"><i
+						class="material-icons left">note_add</i>查看标本图片</a> <span>略。</span> <a
+						class="waves-effect waves-light btn"><i
+						class="material-icons left">note_add</i>批量核对</a> <span>细胞病理专用批量核对玻片功能。</span>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-action">特殊逻辑</div>
+				<div class="card-content"></div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<div class="card teal">
+							<div class="card-content white-text">
+								<span class="card-title">01.核对</span>
+								<div class="card-action"></div>
+								<p>
+									&raquo;&nbsp;必须所有玻片状态为<font color="red">已染色、待核对、已核对、已分配</font>才能完成核对。
+								</p>
+								<p>
+									&nbsp;
+								</p>
+								<p>&nbsp;</p>
+								<p>&nbsp;</p>
+								<div class="card-action"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-
-
-	</script>
 
 
 	<!-- JS Scripts-->
@@ -52,16 +112,6 @@
 
 	<!-- Bootstrap Js -->
 	<script src="assets/js/bootstrap.min.js"></script>
-
-
-	<span id="s1">123</span>
-	<script type="text/javascript">
-		$(function() {
-			$("#s1").click(function() {
-				alert("123");
-			});
-		});
-	</script>
 
 </body>
 

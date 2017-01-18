@@ -26,6 +26,9 @@
 <!-- jQuery Js -->
 <script src="assets/js/jquery-1.10.2.js"></script>
 
+<!-- mycss -->
+<link rel="stylesheet" href="css/mycss.css">
+
 </head>
 
 <body>
@@ -48,9 +51,8 @@
 
 			<ul class="nav navbar-top-links navbar-right">
 				<li><a class="dropdown-button waves-effect waves-dark"
-					href="#!" data-activates="dropdown4"> <i
-						class="fa fa-envelope fa-fw"></i> <i class="material-icons right">arrow_drop_down</i>
-				</a></li>
+					href="#!" data-activates="dropdown4"><i
+						class="fa fa-envelope fa-fw"></i> <i class="material-icons right">arrow_drop_down</i></a></li>
 			</ul>
 		</nav>
 		<!-- Dropdown Structure -->
@@ -92,100 +94,89 @@
 			<div class="sidebar-collapse">
 				<ul class="nav" id="main-menu">
 
-					<li><a href="index.html"
-						class="active-menu waves-effect waves-dark"><i
-							class="fa fa-dashboard"></i> 接收分发<span class="fa arrow"></span></a>
-						<ul class="nav nav-second-level">
-							<li><a href="#">无</a></li>
-							<li><a href="#">无<span class="fa arrow"></span></a>
-								<ul class="nav nav-third-level">
-									<li><a href="#">Third Level Link</a></li>
-									<li><a href="#">Third Level Link</a></li>
-									<li><a href="#">Third Level Link</a></li>
-								</ul></li>
+					<li><a href="#" class="waves-effect waves-dark"><i
+							class="fa fa-sitemap"></i> 检测过程<span class="fa arrow"></span></a>
+						<ul id="liebiao" class="nav nav-second-level">
+							<li id="qucai"><a>取材</a></li>
+							<li id="tuoshui"><a>脱水</a></li>
+							<li id="baomai"><a>包埋</a></li>
+							<li id="zhipian"><a>制片</a></li>
+							<li id="zhipian-wu"><a>制片-无蜡块</a></li>
+							<li id="ranse"><a>染色</a></li>
+							<li id="hedui"><a>核对玻片</a></li>
+							<li id="fenpei"><a>分配阅片任务</a></li>
 						</ul></li>
 
-					<li><a href="index.html"
-						class="active-menu waves-effect waves-dark"><i
-							class="fa fa-table"></i> 检测过程<span class="fa arrow"></span></a>
-						<ul class="nav nav-second-level">
-							<li id="qucai"><a href="#">取材</a></li>
-							<li><a id="qucai" href="#">脱水</a></li>
-							<li><a href="#">包埋</a></li>
-							<li><a href="#">制片</a></li>
-							<li><a href="#">制片-无蜡块</a></li>
-							<li><a href="#">染色</a></li>
-							<li><a href="#">核对玻片</a></li>
-							<li><a href="#">分配阅片任务<span class="fa arrow"></span></a>
-								<ul class="nav nav-third-level">
-									<li><a href="#">Third Level Link</a></li>
-									<li><a href="#">Third Level Link</a></li>
-									<li><a href="#">Third Level Link</a></li>
-								</ul></li>
+					<li><a href="#" class="waves-effect waves-dark"><i
+							class="fa fa-desktop"></i> 检测结果<span class="fa arrow"></span></a>
+						<ul id="liebiao" class="nav nav-second-level">
+							<li id="CGBGFB"><a>常规报告发布</a></li>
+							<li id="PGZPZL"><a>评估制片质量</a></li>
+							<li id="SZQP"><a>数字切片</a></li>
+							<li id="CCJ"><a>重制片/重取材/加做项目</a></li>
+							<li id="BLSF"><a>随访申请/随访病例列表</a></li>
+							<li id="TJBLK"><a>提交病理库</a></li>
+							<li id="WJZBG"><a>危急值报告</a></li>
+							<li id="JYJZXM"><a>建议加做项目</a></li>
+							<li id="TSXQCZQD"><a>特殊需求操作清单</a></li>
+							<li id="WYHZ"><a>外院会诊资料一览表-病理</a></li>
+							<li id="ZDZK"><a>诊断质控</a></li>
 						</ul></li>
 
-					<li><a href="index.html"
-						class="active-menu waves-effect waves-dark"><i
-							class="fa fa-desktop"></i> 结果处理<span class="fa arrow"></span></a>
-						<ul class="nav nav-second-level">
-							<li><a href="#">Second Level Link</a></li>
-							<li><a href="#">Second Level Link</a></li>
-							<li><a href="#">Second Level Link<span class="fa arrow"></span></a>
-								<ul class="nav nav-third-level">
-									<li><a href="#">Third Level Link</a></li>
-									<li><a href="#">Third Level Link</a></li>
-									<li><a href="#">Third Level Link</a></li>
-
-								</ul></li>
+					<li><a href="#" class="waves-effect waves-dark"><i
+							class="fa fa-qrcode"></i> 高级应用<span class="fa arrow"></span></a>
+						<ul id="liebiao" class="nav nav-second-level">
+							<li id="HBSYH"><a>合并实验号</a></li>
+							<li id="JZXGSYH"><a>加做修改实验号</a></li>
+							<li id="LKEHY"><a>蜡块二合一</a></li>
 						</ul></li>
 				</ul>
 			</div>
+
 		</nav>
-	</div>
+		<!-- /. NAV SIDE  -->
 
-	<div id="page-wrapper">
-
-		<div class="header">
-			<h1 class="page-header"></h1>
-		</div>
-
-		<!-- 内部 -->
-		<div id="page-inner">
-
-			<div>
-				<iframe id="iframe" src="test.html" width="100%" scrolling="no"
-					frameborder="0" onload="changeFrameHeight()" marginwidth="0px"></iframe>
+		<div id="page-wrapper">
+			<div class="header">
+				<h1 class="page-header"></h1>
 			</div>
-
-			<!-- 底部圆点 -->
-			<div class="fixed-action-btn horizontal click-to-toggle">
-				<a class="btn-floating btn-large red"> <i class="material-icons">menu</i>
-				</a>
-				<ul>
-					<li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-					<li><a class="btn-floating yellow darken-1"><i
-							class="material-icons">format_quote</i></a></li>
-					<li><a class="btn-floating green"><i
-							class="material-icons">publish</i></a></li>
-					<li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-				</ul>
+			<div id="page-inner">
+				<div>
+					<iframe id="iframe" width="100%" scrolling="auto" frameborder="0"
+						onload='fun2()'></iframe>
+				</div>
 			</div>
+			<!-- /. PAGE INNER  -->
 		</div>
-
+		<!-- /. PAGE WRAPPER  -->
 	</div>
-
 
 	<script type="text/javascript">
 		$(function() {
-			$("#id1").click(function() {
-				alert("123");
+			$('#liebiao li').hover(function() {
+				$(this).addClass('hover');
+			}, function() {
+				$(this).removeClass('hover');
+			});
+			$('#liebiao li').click(function() {
+				$('#liebiao li').removeClass('bg');
+				$(this).addClass('bg');
+				$("#iframe").attr({
+					src : this.id + ".html"
+				});
 			});
 		});
+
+		function fun2() {
+			var ifm = document.getElementById("iframe");
+			ifm.height = document.documentElement.clientHeight;
+		}
+		window.onresize = function() {
+			fun2();
+		}
 	</script>
-
-
-
 	<!-- JS Scripts-->
+
 	<!-- Bootstrap Js -->
 	<script src="assets/js/bootstrap.min.js"></script>
 
@@ -205,15 +196,9 @@
 
 	<!-- Custom Js -->
 	<script src="assets/js/custom-scripts.js"></script>
-</body>
-<script type="text/javascript">
-	function changeFrameHeight() {
-		var ifm = document.getElementById("iframe");
-		ifm.height = document.documentElement.clientHeight;
-	}
-	window.onresize = function() {
-		changeFrameHeight();
-	}
 
-</script>
+
+</body>
+
+
 </html>
